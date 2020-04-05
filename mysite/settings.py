@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog.apps.BlogConfig',
+    'taggit',
 ]
 
 MIDDLEWARE = [
@@ -100,13 +101,23 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+# Sending Email with Django
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'rajneeshpython@gmail.com'
+EMAIL_HOST_PASSWORD = 'python123'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+#TIME_ZONE = 'UTC'
+# Indian timezone
+TIME_ZONE =  'Asia/Kolkata'
+
 
 USE_I18N = True
 
